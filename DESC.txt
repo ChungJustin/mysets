@@ -1,0 +1,5 @@
+어떤 개발환경에서건, one script로 내 환경을 만들어주는 자동화 스크립트 작성이 최종목표입니다. 
+
+1. First thing to do is .vimrc
+- Not only setting vimrc, but also automatically install needed Vundles (for now Taglist, NERDTree).
+- Plus, planning to write shell script, which will automatically install all needed apps for my own settings.

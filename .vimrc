@@ -56,8 +56,15 @@ if $LANG[0]=='k' && $LANG[1]=='o'
 set fileencoding=korea
 endif
 
-" 검색에 대해서, 대소문자 구분 없음
-set nosmartcase
+" 검색에 대해서, 대소문자 구분
+" set nosmartcase
+set ignorecase
+set smartcase
+" /copyright      " Case insensitive
+" /Copyright      " Case sensitive
+" /copyright\C    " Case sensitive
+" /Copyright\c    " Case insensitive
+
 
 " Vundles
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -81,6 +88,9 @@ Plugin 'taglist.vim'
 " Tagbar
 Plugin 'majutsushi/tagbar'
 
+" Nerdcommenter
+Plugin 'scrooloose/nerdcommenter'
+
 call vundle#end()
 
 " For vim-airline
@@ -89,7 +99,7 @@ set laststatus=2 " Turn on bottom bar
 
 " For taglist
 let Tlist_Use_Right_Window = 1
-let Tlist_Auto_Open = 1
+" let Tlist_Auto_Open = 1
 let g:TlistWinWidth = 60
 
 " For NerdTree
